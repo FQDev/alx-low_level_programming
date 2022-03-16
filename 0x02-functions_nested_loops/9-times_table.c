@@ -20,19 +20,15 @@ void times_table(void)
 		{
 			int res = i * j;
 
-			snprintf(buff, 3, "%d", res);
-			printf("%d,  ", res);
-
+			if (res < 10)
+			{
+				printf("%d,   ", res);
+			}
+			else
+			{
+				printf("%d,  ", res);
+			}
 		}
-
-		snprintf(buff, 3, "%d", last);
-		if ((int)sizeof(buff) / sizeof(buff[0]) == 1)
-		{
-			printf(",   %d\n", last);
-		}
-		else
-		{
-			printf(", %d\n", last);
-		}
+		printf("%d\n", last);	
 	}
 }
