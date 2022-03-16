@@ -10,7 +10,7 @@ void times_table(void)
 {
 	int j = 0;
 	int i = 0;
-	char s[] = "";
+	char s[3]= "res";
 
 	for (i = 0; i < 10; i++)
 	{
@@ -20,7 +20,7 @@ void times_table(void)
 		{
 			int res = i * j;
 	
-			s[] = res + "";
+			s = res + "";
 			if ((int)sizeof(s) / sizeof(s[0]) == 1)
 			{
 				printf(",  %d", res);
@@ -31,7 +31,7 @@ void times_table(void)
 			}
 		}
 
-		s[] = last + "";		
+		s = last + "";		
 		if ((int)sizeof(s) / sizeof(s[0]) == 1)
 		{
 			printf(",  %d\n", last);
