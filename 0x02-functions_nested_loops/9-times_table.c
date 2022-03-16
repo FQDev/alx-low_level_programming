@@ -10,7 +10,6 @@ void times_table(void)
 {
 	int j = 0;
 	int i = 0;
-	char buff[3] = "";
 
 	for (i = 0; i < 10; i++)
 	{
