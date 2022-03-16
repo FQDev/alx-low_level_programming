@@ -4,7 +4,7 @@
  * times_table - check the code
  * Return: nothing
  */
-void times_table()
+void times_table(void)
 {
 	int j = 0;
 	int i = 0;
