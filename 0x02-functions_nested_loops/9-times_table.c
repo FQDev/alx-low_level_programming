@@ -39,6 +39,6 @@ void times_table(void)
 		else
 		{
 			printf(" %d\n", last);
-		}	
+		}
 	}
 }
