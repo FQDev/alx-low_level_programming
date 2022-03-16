@@ -8,7 +8,9 @@
  */
 int print_last_digit(int c)
 {
-	char s[] = c+"";
+	char s[] = "";
+
+	sprintf(s, "%d", c);
 	int size = (int)sizeof(s) / sizeof(s[0]);
 	char lastD[1] = s[size - 1];
 	
