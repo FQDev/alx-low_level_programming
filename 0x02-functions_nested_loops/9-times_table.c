@@ -19,13 +19,17 @@ void times_table(void)
 		{
 			int res = i * j;
 
-			if (res < 10)
+			if (j == 0)
 			{
-				printf("%d,   ", res);
+				printf("%d,", res);
+			}
+			else if (res < 10)
+			{
+				printf("  %d,", res);
 			}
 			else
 			{
-				printf("%d,  ", res);
+				printf(" %d,", res);
 			}
 		}
 		printf("%d\n", last);	
