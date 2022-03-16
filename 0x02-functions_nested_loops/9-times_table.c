@@ -21,21 +21,8 @@ void times_table(void)
 			int res = i * j;
 
 			snprintf(buff, 3, "%d", res);
-			if ((int)sizeof(buff) / sizeof(buff[0]) != 1)
-			{
-				if (j != 0)
-				{
-					printf("%d,   ", res);
-				}
-				else
-				{
-					printf(",   %d", res);
-				}
-			}
-			else
-			{
-				printf(", %d", res);
-			}
+			printf("%d,  ", res);
+
 		}
 
 		snprintf(buff, 3, "%d", last);
