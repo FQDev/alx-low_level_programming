@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 #include <ctype.h>
 /**
  * times_table - check the code
@@ -14,11 +16,11 @@ void times_table(void)
 		printf("%d", i);
 		for (j = 0; j < 9; j++)
 		{
-			int res = i x j;
+			int res = i * j;
 			printf(",  %d", res);
 
 		}
-		int last = i x 9;
+		int last = i * 9;
 		printf(",  %d$\n", last);
 	}
 }
