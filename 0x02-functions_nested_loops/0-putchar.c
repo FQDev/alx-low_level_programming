@@ -7,13 +7,14 @@
  */
 int main(void)
 {
-	char w[] = "_putchar\n";
+	char w[] = "_putchar";
 	int i = 0;
 	int length_w = sizeof(w) / sizeof(w[0]);
-	
+
 	for (i = 0; i < length_w; i++)
 	{
 		_putchar(w[i]);
 	}
+	_putchat("\n");
 	return (0);
 }
