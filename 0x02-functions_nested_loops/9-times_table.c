@@ -23,7 +23,14 @@ void times_table(void)
 			snprintf(buff, 3, "%d", res);
 			if ((int)sizeof(buff) / sizeof(buff[0]) == 1)
 			{
-				printf(",  %d", res);
+				if (j == 0)
+				{
+					printf("%d,   ", res);
+				}
+				else
+				{
+					printf(",   %d", res);
+				}
 			}
 			else
 			{
@@ -34,7 +41,7 @@ void times_table(void)
 		snprintf(buff, 3, "%d", last);
 		if ((int)sizeof(buff) / sizeof(buff[0]) == 1)
 		{
-			printf(",  %d\n", last);
+			printf(",   %d\n", last);
 		}
 		else
 		{
