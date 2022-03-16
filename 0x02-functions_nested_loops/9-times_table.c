@@ -13,6 +13,8 @@ void times_table(void)
 
 	for (i = 0; i < 10; i++)
 	{
+		int last i * 9;
+
 		printf("%d", i);
 		for (j = 0; j < 9; j++)
 		{
@@ -20,7 +22,6 @@ void times_table(void)
 			printf(",  %d", res);
 
 		}
-		int last = i * 9;
 		printf(",  %d$\n", last);
 	}
 }
