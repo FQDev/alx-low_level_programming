@@ -32,6 +32,13 @@ void times_table(void)
 				printf(" %d,", res);
 			}
 		}
-		printf("%d\n", last);	
+		if (last < 10)
+		{
+			printf("  %d\n", last);
+		}
+		else
+		{
+			printf(" %d\n", last);
+		}	
 	}
 }
