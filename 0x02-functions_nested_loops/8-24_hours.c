@@ -12,8 +12,12 @@ void jack_bauer(void)
 	int s = 0;
 
 	printf("00:00\n");
-	while (m <= 23)
+	while (m < 24)
 	{
+		if (m == 24)
+		{
+			break;
+		}
 		if (s == 59)
 		{
 			s = 0;
