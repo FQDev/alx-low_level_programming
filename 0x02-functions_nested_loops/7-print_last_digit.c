@@ -9,9 +9,8 @@
  */
 int print_last_digit(int c)
 {
-	/**
-	 * char s[12] = "";
-	 * int size = 0;
+	char s[12] = "";
+	/** int size = 0;
 	 * char lastD[2] = "";
 	 */
 	int lastDig = 0;
@@ -21,6 +20,7 @@ int print_last_digit(int c)
 	 * size = (int)sizeof(s) / sizeof(s[0]);
 	 * lastD[2] =  s[size - 1];
 	 */
-	 lastDig = c % 10;
-	return ("%d%d", lastDig, lastDig);
+	lastDig = c % 10;
+	snprintf(s, 12, "%d%d", lastDig, lastDig);
+	return (s);
 }
