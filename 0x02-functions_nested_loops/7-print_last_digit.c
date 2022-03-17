@@ -21,6 +21,8 @@ int print_last_digit(int c)
 	 * lastD[2] =  s[size - 1];
 	 */
 	lastDig = c % 10;
-	snprintf(s, 12, "%d%d", lastDig, lastDig);
+	// snprintf(s, 12, "%d%d", lastDig, lastDig);
+	s[0] = lastDig;
+	s[1] = lastDig;
 	return (s);
 }
