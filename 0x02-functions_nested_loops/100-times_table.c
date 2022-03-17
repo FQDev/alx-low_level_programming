@@ -42,9 +42,9 @@ void print_times_table(int n)
 			{
 				printf("   %d\n", last);
 			}
-			else if (res >= 10 && res < 99)
+			else if (last >= 10 && last < 99)
 			{
-				printf("  %d,", res);
+				printf("  %d,", last);
 			}
 			else
 			{
