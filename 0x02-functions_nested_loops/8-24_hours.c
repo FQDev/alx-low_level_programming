@@ -7,16 +7,13 @@
  */
 void jack_bauer(void)
 {
-	char t[5] = "00:00";
-	char cm[2] = "00";
-	char cs[2] = "00";
 	int m = 0;
 	int s = 0;
 	
 	while (m < 24)
 	{
-		printf(t);
-		if (s == 59)
+		printf("00:00");
+		if (s == 60)
 		{
 			s = 0;
 			m++;
@@ -25,13 +22,21 @@ void jack_bauer(void)
 		{
 			s++;
 		}
-		if (s > 10)
+		if (s >= 10 && m >= 10)
 		{
-			snprintf(cm, 2, "%d", s);
+			printf("%d:%d", m, s);
+		}
+		else if (s >= 10 && m < 10)
+		{
+			printf("0%d:%d", m, s);
+		}
+		else if(s < 10 && m < 10)
+		{
+			printf("0%d:0%d", m, s);
 		}
 		else
 		{
-sh: 1: q: not found
+			printf("%d:0%d", m, s);
 		}
 
 

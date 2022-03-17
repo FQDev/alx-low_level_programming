@@ -11,11 +11,12 @@
  */
 int print_last_digit(int c)
 {
-	/** char s[12] = "";
+	/**
+	 * char s[12] = "";
 	 * int size = 0;
 	 * char lastD[2] = "";
 	 *
-	 * int lastDig = 0; 
+	 * int lastDig = 0;
 	 *
 	 * snprintf(s, 12, "%d", c);
 	 * size = (int)sizeof(s) / sizeof(s[0]);
@@ -24,7 +25,7 @@ int print_last_digit(int c)
 	 * lastDig = c % 10;
 	 * snprintf(s, 12, "%d%d", lastDig, lastDig);
 	 * s[0] = lastDig;
-	 * s[1] = lastDig; 
+	 * s[1] = lastDig;
 	 */
 	int num = abs(c) % 10;
 	 /* int retval = num * pow(10, (int)log10(num)+1) + num;*/
@@ -41,5 +42,5 @@ int print_last_digit(int c)
 	s1[0] = num;
 	s1[1] = num;
 
-	return atoi(s1);
+	return (atoi(s1));
 }
