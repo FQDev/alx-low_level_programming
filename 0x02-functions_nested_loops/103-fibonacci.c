@@ -9,10 +9,10 @@
  */
 int main(void)
 {
-	unsigned long n1 = 1, n2 = 2, sum = 5;
+	unsigned long n1 = 1, n2 = 2, sum = 3;
 
 	/* printf("%lu, %lu, 3, ", n1, n2); */
-	while (sum + n1 <= 4999999)
+	while (sum + n2 <= 4999999)
 	{
 		sum = n1 + n2;
 		printf("%lu, ", sum);
