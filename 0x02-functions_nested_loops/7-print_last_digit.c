@@ -25,6 +25,7 @@ int print_last_digit(int c)
 	 * s[1] = lastDig; 
 	 */
 	int num = abs(c) % 10;
+	int retval = num * pow(10, (int)log10(num)+1) + num;
 
-	return (num + '' + num);
+	return (retval);
 }
