@@ -12,7 +12,7 @@
 int print_last_digit(int c)
 {
 	int lastD = 0;
-	char s[2];
+	char s[20];
 
 	lastD = abs(c) % 10;
 	sprintf(s, "%02d", lastD);
