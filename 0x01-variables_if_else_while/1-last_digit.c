@@ -21,11 +21,11 @@ int main(void)
 	}
 	else if (ld > 5)
 	{
-		printf("and is greater than 5\n");
+		printf("greater than 5\n");
 	}
 	else if (ld > 0 && ld < 6)
 	{
-		printf("and is less than 6 and not 0\n");
+		printf("less than 6 and not 0\n");
 	}
 	return (0);
 }
