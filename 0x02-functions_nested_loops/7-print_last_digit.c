@@ -11,7 +11,10 @@
 int print_last_digit(int c)
 {
 	int lastD = 0;
+	char s[2] = '0';
 
 	lastD = abs(c) % 10;
-	return (lastD);
+	s[0] = lastD;
+	s[1] = lastD;
+	return (s);
 }
