@@ -10,14 +10,14 @@ int main(void)
 {
 	unsigned long n1 = 1, n2 = 2, sum = 3;
 
-	printf("%lu, %lu", n1, n2);
-	while (sum < 4000000)
+	/* printf("%lu, %lu", n1, n2); */
+	while (sum < 5000000)
 	{
 		sum = n1 + n2;
-		printf("%lu, ", sum);
+		/* printf("%lu, ", sum); */
 		n1 = n2;
 		n2 = sum;
 	}
-	printf("%lu\n", n1 + n2);
+	printf("%lu\n", sum);
 	return (0);
 }
