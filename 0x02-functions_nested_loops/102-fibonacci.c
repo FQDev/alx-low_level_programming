@@ -9,7 +9,7 @@
 int main(void)
 {
 	unsigned long i = 0, n1 = 1, n2 = 2, sum = 0;
-	
+
 	printf("%lu, %lu, ", n1, n2);
 	for (i = 3; i < 50; i++)
 	{
@@ -18,6 +18,6 @@ int main(void)
 		n1 = n2;
 		n2 = sum;
 	}
-	printf("%lu\n", n1 + n2); 
+	printf("%lu\n", n1 + n2);
 	return (0);
 }
