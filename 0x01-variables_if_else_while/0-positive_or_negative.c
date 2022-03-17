@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there 
+/**
  * main - Entry function
- * Return: 0 
+ * Return: 0
  */
 int main(void)
 {
