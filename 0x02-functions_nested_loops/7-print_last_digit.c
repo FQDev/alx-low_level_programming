@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdlib.h>
-#include<stdio.h>
+#include <stdio.h>
 #include <math.h>
+#include <string.h>
 
 /**
  * print_last_digit - check the code
@@ -27,11 +28,13 @@ int print_last_digit(int c)
 	 */
 	int num = abs(c) % 10;
 	 /* int retval = num * pow(10, (int)log10(num)+1) + num;*/
-	int pow = 10;
+	char s1[20];
+	char s2[20];
+	int retval = 0;
 
-	while (num >= pow)
-	{
-		pow *= 10;
-	}
-	return num * pow + num;
+	sprintf(s1, "%d", num);
+	sprintf(s2, "%d", num);
+	strcat(s1, s2);
+	retval = atoa(s1);
+	return retval;
 }
