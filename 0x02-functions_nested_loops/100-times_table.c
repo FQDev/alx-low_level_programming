@@ -2,6 +2,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+
+void printOp(int v)
+{
+ 	if (v < 10)
+	{
+		printf("   %d,", v);
+	}
+	else if (v >= 10 && v < 99)
+	{
+		printf("  %d,", v);
+	}
+	else
+	{
+		printf(" %d", v);
+	}
+}
 /**
  * print_times_table - check the code
  * Return: nothing
@@ -25,21 +41,5 @@ void print_times_table(int n)
 			printOp(i * n);
 			printf("\n");
 		}
-	}
-}
-
-void printOp(int v)
-{
-	if (v < 10)
-	{
-		printf("   %d,", v);
-	}
-	else if (v >= 10 && v < 99)
-	{
-		printf("  %d,", v);
-	}
-	else
-	{
-		printf(" %d", v);
 	}
 }
