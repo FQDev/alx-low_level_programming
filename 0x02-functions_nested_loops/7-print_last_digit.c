@@ -12,9 +12,11 @@ int print_last_digit(int c)
 	char s[12] = "";
 	int size = 0;
 	char lastD[2] = "";
+	int lastDig = 0;
 
-	sprintf(s, "%d", c);
+	snprintf(s, 12, "%d", c);
 	size = (int)sizeof(s) / sizeof(s[0]);
 	lastD[2] =  s[size - 1];
-	return (lastD[0]);
+	lastDig = c%10;
+	return (lastDig);
 }
