@@ -41,5 +41,5 @@ int print_last_digit(int c)
 	s1[0] = num;
 	s1[1] = num;
 
-	return stoi(s1);
+	return atoi(s1);
 }
