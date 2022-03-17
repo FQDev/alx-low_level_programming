@@ -15,12 +15,10 @@ int main(void)
 	while (n1 + n2 <= 4999999)
 	{
 		sum = n1 + n2;
-		/**
-		 * printf("%lu, ", sum);
-		 */
+		/* printf("%lu, ", sum); */ 
 		n1 = n2;
 		n2 = sum;
 	}
-	printf("%lu\n", sum);
+	printf("%lu\n", n1 + n2);
 	return (0);
 }
