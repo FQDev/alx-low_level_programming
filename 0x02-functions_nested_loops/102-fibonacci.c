@@ -18,6 +18,6 @@ int main(void)
 		n1 = n2;
 		n2 = sum;
 	}
-	/* printf("%d\n", sum); */
+	printf("%lu\n", n1 + n2); 
 	return (0);
 }
