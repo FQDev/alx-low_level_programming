@@ -19,6 +19,6 @@ int main(void)
 			/* printf("%d", i); */
 		}
 	}
-	printf("%d", sum);
+	printf("%d\n", sum);
 	return (0);
 }
