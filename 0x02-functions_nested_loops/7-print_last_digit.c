@@ -13,11 +13,8 @@ int print_last_digit(int c)
 {
 	int lastD = 0;
 	char s[2];
-	char s2[2];
 
 	lastD = abs(c) % 10;
-	sprintf(s, "%d", lastD);
-	sprintf(s2, "%d", lastD);
-	strcat(s, s2);
+	sprintf(s, "%02d", lastD);
 	return (atoi(s));
 }
