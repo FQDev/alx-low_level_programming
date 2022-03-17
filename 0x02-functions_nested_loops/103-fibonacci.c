@@ -12,13 +12,14 @@ int main(void)
 	unsigned long n1 = 1, n2 = 2, sum = 5;
 
 	/* printf("%lu, %lu, 3, ", n1, n2); */
-	while (n1 + n2 <= 4999999)
+	while (sum + n1 <= 4999999)
 	{
 		sum = n1 + n2;
 		printf("%lu, ", sum);
+		kp = n1;
 		n1 = n2;
 		n2 = sum;
 	}
-	printf("%lu\n", sum);
+	printf("%lu\n", sum + n1);
 	return (0);
 }
