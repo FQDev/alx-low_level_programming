@@ -8,15 +8,18 @@
  */
 int main(void)
 {
-	unsigned long n1 = 1, n2 = 2, sum = 3;
+	unsigned long n1 = 1, n2 = 2, sum = 5;
 
-	/* printf("%lu, %lu", n1, n2); */
+	/* printf("%lu, %lu, 3, ", n1, n2); */
 	while (sum < 4999999)
 	{
-		sum = n1 + n2;
-		/* printf("%lu, ", sum); */
+		/**
+		 * sum = n1 + n2;
+		 * printf("%lu, ", sum);
+		 */
 		n1 = n2;
 		n2 = sum;
+		sum = n1 + n2;
 	}
 	printf("%lu\n", sum);
 	return (0);
