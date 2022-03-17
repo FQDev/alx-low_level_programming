@@ -9,20 +9,22 @@
  */
 int print_last_digit(int c)
 {
-	/* char s[12] = ""; */
-	/** int size = 0;
+	/** char s[12] = "";
+	 * int size = 0;
 	 * char lastD[2] = "";
-	 */
-	/* int lastDig = 0; */
-
-	/**
+	 *
+	 * int lastDig = 0; 
+	 *
 	 * snprintf(s, 12, "%d", c);
 	 * size = (int)sizeof(s) / sizeof(s[0]);
 	 * lastD[2] =  s[size - 1];
+	 *
+	 * lastDig = c % 10;
+	 * snprintf(s, 12, "%d%d", lastDig, lastDig);
+	 * s[0] = lastDig;
+	 * s[1] = lastDig; 
 	 */
-	/* lastDig = c % 10; */
-	/* snprintf(s, 12, "%d%d", lastDig, lastDig); */
-	/* s[0] = lastDig; */
-	/* s[1] = lastDig; */
-	return (c % 10);
+	int num = abs(c) % 10;
+
+	return (num + '' + num);
 }
