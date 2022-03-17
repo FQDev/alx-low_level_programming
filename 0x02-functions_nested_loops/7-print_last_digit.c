@@ -28,13 +28,18 @@ int print_last_digit(int c)
 	 */
 	int num = abs(c) % 10;
 	 /* int retval = num * pow(10, (int)log10(num)+1) + num;*/
-	char s1[20];
-	char s2[20];
-	int retval = 0;
+	char s1[2];
+	/**
+	 * char s2[20];
+	 * int retval = 0;
+	 *
+	 * sprintf(s1, "%d", num);
+	 * sprintf(s2, "%d", num);
+	 * strcat(s1, s2);
+	 * retval = atol(s1);
+	 */
+	s1[0] = num;
+	s1[1] = num;
 
-	sprintf(s1, "%d", num);
-	sprintf(s2, "%d", num);
-	strcat(s1, s2);
-	retval = atol(s1);
-	return retval;
+	return s1;
 }
