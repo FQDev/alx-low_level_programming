@@ -27,11 +27,11 @@ int print_last_digit(int c)
 	 */
 	int num = abs(c) % 10;
 	 /* int retval = num * pow(10, (int)log10(num)+1) + num;*/
-	unsigned pow = 10;
-	
+	int pow = 10;
+
 	while (num >= pow)
 	{
 		pow *= 10;
 	}
-	return x * pow + y;
+	return num * pow + num;
 }
