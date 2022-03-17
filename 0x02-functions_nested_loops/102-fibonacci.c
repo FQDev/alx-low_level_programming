@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	int i = 0, n1 = 1, n2 = 2, sum = 0;
+	unsigned i = 0, n1 = 1, n2 = 2, sum = 0;
 	
 	printf("%d, %d, ", n1, n2);
 	for (i = 3; i < 50; i++)
