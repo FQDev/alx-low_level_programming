@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	long long n1 = 1, n2 = 2, sum = 3, compt = 2;
+	unsigned long n1 = 1, n2 = 2, sum = 3, compt = 2;
 
 	printf("%lu, %lu, ", n1, n2);
 	while (compt < 98)
