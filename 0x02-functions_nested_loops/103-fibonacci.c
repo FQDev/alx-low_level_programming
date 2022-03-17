@@ -8,9 +8,9 @@
  */
 int main(void)
 {
-	unsigned long i = 0, n1 = 1, n2 = 2, sum = 3;
+	unsigned long n1 = 1, n2 = 2, sum = 3;
 
-	printf("%lu, %d", n1, n2);
+	printf("%lu, %lu", n1, n2);
 	while (sum < 4000000)
 	{
 		sum = n1 + n2;
