@@ -21,6 +21,6 @@ int print_last_digit(int c)
 	 * size = (int)sizeof(s) / sizeof(s[0]);
 	 * lastD[2] =  s[size - 1];
 	 */
-	 lastDig = c%10;
-	return (lastDig);
+	 lastDig = c % 10;
+	return ("%d%d", lastDig, lastDig);
 }
