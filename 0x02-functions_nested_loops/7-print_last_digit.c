@@ -35,6 +35,6 @@ int print_last_digit(int c)
 	sprintf(s1, "%d", num);
 	sprintf(s2, "%d", num);
 	strcat(s1, s2);
-	retval = atoa(s1);
+	retval = atol(s1);
 	return retval;
 }
