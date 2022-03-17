@@ -12,7 +12,7 @@ int main(void)
 	unsigned long n1 = 1, n2 = 2, sum = 5,fd = 0, digits = 0;
 
 	/* printf("%lu, %lu, 3, ", n1, n2); */
-	while (fb < 5)
+	while (fd < 5)
 	{
 		/**
 		 * sum = n1 + n2;
