@@ -23,7 +23,7 @@ int main(void)
 	{
 		printf("greater than 5\n");
 	}
-	else if (ld > 0 && ld < 6)
+	else if (ld != 0 && ld < 6)
 	{
 		printf("less than 6 and not 0\n");
 	}
