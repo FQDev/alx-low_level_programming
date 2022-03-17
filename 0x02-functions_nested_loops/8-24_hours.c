@@ -10,10 +10,10 @@ void jack_bauer(void)
 {
 	int m = 0;
 	int s = 0;
-	
+
+	printf("00:00\n");
 	while (m < 24)
 	{
-		printf("00:00");
 		if (s == 60)
 		{
 			s = 0;
@@ -31,7 +31,7 @@ void jack_bauer(void)
 		{
 			printf("0%d:%d", m, s);
 		}
-		else if(s < 10 && m < 10)
+		else if (s < 10 && m < 10)
 		{
 			printf("0%d:0%d", m, s);
 		}
@@ -39,7 +39,7 @@ void jack_bauer(void)
 		{
 			printf("%d:0%d", m, s);
 		}
-
+		printf("\n");
 
 	}
 }
